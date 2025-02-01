@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barbearia profissional com os melhores serviços de corte de cabelo e barba. Ambiente acolhedor e profissionais qualificados.">
+    <meta name="keywords" content="barbearia, corte de cabelo, barba, barbeiro, salão masculino, barbearia profissional">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="icon" href="src/images/logo.png">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Barbershop - Sua Barbearia de Confiança</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="header__logo">
+            <img src="src/images/logo.png" alt="Logo Barbershop" class="header__logo-img">
+        </a>
+        <button class="header__menu-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#home" class="header__nav-link">INÍCIO</a></li>
+                <li class="header__nav-item"><a href="#about" class="header__nav-link">SOBRE</a></li>
+                <li class="header__nav-item"><a href="#services" class="header__nav-link">SERVIÇOS</a></li>
+                <li class="header__nav-item"><a href="#pricing" class="header__nav-link">PREÇOS</a></li>
+                <li class="header__nav-item"><a href="#appointment" class="header__nav-link">AGENDAR</a></li>
+                <li class="header__nav-item"><a href="#contact" class="header__nav-link">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home">
+            <div class="home__container container">
+                <span class="home__subtitle">ESTILO E TRADIÇÃO</span>
+                <h1 class="home__title">A MELHOR BARBEARIA DA CIDADE</h1>
+                <p class="home__description">RUA DA BARBEARIA, 123. AGENDAMENTO: (11) 99999-9999</p>
+                <a href="#appointment" class="btn btn__secondary">AGENDAR HORÁRIO</a>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="about__container container">
+                <span class="section__subtitle">DESDE 2006</span>
+                <h2 class="section__title">Barbershop</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>Venha conhecer uma barbearia única e moderna para todos os seus cuidados com cabelo e barba.</p>
+                        <ul class="about__features">
+                            <li><i class="fas fa-check"></i> Profissionais certificados e experientes</li>
+                            <li><i class="fas fa-check"></i> Produtos de alta qualidade</li>
+                            <li><i class="fas fa-check"></i> Ambiente acolhedor e confortável</li>
+                        </ul>
+                    </div>
+                    <div class="about__image">
+                        <img src="src/images/imagem01.jpg" alt="Barbeiro trabalhando" class="about__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="services__container container">
+                <span class="section__subtitle">NOSSOS SERVIÇOS</span>
+                <h2 class="section__title">Serviços de Barbearia</h2>
+                <div class="services__grid">
+                    <div class="service__card">
+                        <img src="src/images/service1.jpg" alt="Corte de Cabelo" class="service__img">
+                        <div class="service__content">
+                            <i class="fas fa-cut service__icon"></i>
+                            <h3 class="service__title">Corte de Cabelo</h3>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <img src="src/images/service2.jpg" alt="Barba" class="service__img">
+                        <div class="service__content">
+                            <i class="fas fa-fan service__icon"></i>
+                            <h3 class="service__title">Barba</h3>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <img src="src/images/service3.jpg" alt="Lavagem" class="service__img">
+                        <div class="service__content">
+                            <i class="fas fa-shower service__icon"></i>
+                            <h3 class="service__title">Lavagem</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pricing" class="pricing">
+            <div class="pricing__container container">
+                <span class="section__subtitle">TABELA DE PREÇOS</span>
+                <h2 class="section__title">Nossos Preços</h2>
+                <div class="pricing__grid">
+                    <div class="pricing__item">
+                        <h3 class="pricing__service">Corte + Lavagem</h3>
+                        <span class="pricing__price">R$ 45</span>
+                    </div>
+                    <div class="pricing__item">
+                        <h3 class="pricing__service">Barba</h3>
+                        <span class="pricing__price">R$ 35</span>
+                    </div>
+                    <div class="pricing__item">
+                        <h3 class="pricing__service">Corte Estilizado</h3>
+                        <span class="pricing__price">R$ 55</span>
+                    </div>
+                    <div class="pricing__item">
+                        <h3 class="pricing__service">Pacote Completo</h3>
+                        <span class="pricing__price">R$ 85</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="contact__container container">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h2 class="contact__title">Faça seu Agendamento</h2>
+                        <form class="contact__form">
+                            <div class="form__row">
+                                <input type="text" class="form__input" placeholder="Nome" required>
+                                <input type="tel" class="form__input" placeholder="Telefone" required>
+                            </div>
+                            <div class="form__row">
+                                <input type="date" class="form__input" required>
+                                <input type="time" class="form__input" required>
+                            </div>
+                            <div class="form__row">
+                                <select class="form__input" required>
+                                    <option value="">Serviços</option>
+                                    <option value="corte">Corte de Cabelo</option>
+                                    <option value="barba">Barba</option>
+                                    <option value="completo">Pacote Completo</option>
+                                </select>
+                                <select class="form__input" required>
+                                    <option value="">Escolha o Barbeiro</option>
+                                    <option value="joao">João Silva</option>
+                                    <option value="pedro">Pedro Santos</option>
+                                    <option value="carlos">Carlos Oliveira</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn--primary">AGENDAR HORÁRIO</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3>Contato</h3>
+                    <p>Rua da Barbearia, 123</p>
+                    <p>São Paulo - SP</p>
+                    <p class="footer__phone">(11) 99999-9999</p>
+                    <a href="mailto:contato@barbershop.com.br" class="footer__email">contato@barbershop.com.br</a>
+                </div>
+                <div class="footer__info">
+                    <h3>Horário de Funcionamento</h3>
+                    <ul class="footer__hours">
+                        <li>Segunda a Sexta: 09:00 - 20:00</li>
+                        <li>Sábado: 09:00 - 18:00</li>
+                        <li>Domingo: Fechado</li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <h3>Newsletter</h3>
+                    <p>Inscreva-se para receber novidades e promoções exclusivas.</p>
+                    <form class="footer__form">
+                        <input type="email" placeholder="Seu e-mail" class="footer__input" required>
+                        <button type="submit" class="btn btn--primary">INSCREVER</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <img src="src/images/logo.png" alt="Logo Barbershop" class="footer__logo">
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer__social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="src/js/main.js"></script>
+</body>
+</html> 

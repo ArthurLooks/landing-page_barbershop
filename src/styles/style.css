@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import 'header.css';
+@import 'home.css';
+@import 'about.css';
+@import 'services.css';
+@import 'pricing.css';
+@import 'contact.css';
+@import 'footer.css';
+
+
+:root {
+    --color-neutral: #F5F5F5;
+    --color-neutral-dark: #0e0a07;
+
+    --color-primary: #14100C;
+    --color-primary-light: #91765A;
+    --color-secondary: #c0c0c0;
+
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+
+    --container-width: 1200px;
+    --section-space: 120px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--color-neutral-dark);
+    background-color: var(--color-neutral);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.section {
+    padding: var(--section-space) 0;
+}
+
+.section__subtitle {
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: var(--color-primary-light);
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+}
+
+.section__title {
+    font-family: var(--font-secondary);
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 4rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn__primary {
+    background-color: var(--color-primary);
+    color: var(--color-neutral);
+}
+.btn__primary:hover {
+    background-color: var(--color-primary-light);
+}
+
+.btn__secondary {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+}
+.btn__secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-neutral);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-element {
+    opacity: 0;
+}
+
+.animate-in {
+    animation: fadeInUp 0.6s ease forwards;
+}
