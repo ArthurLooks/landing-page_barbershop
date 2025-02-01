@@ -1,0 +1,81 @@
+.schedule {
+    background-color: var(--color-neutral);
+    padding: var(--section-space) 0;
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule__container {
+    max-width: 800px;
+}
+
+.schedule__form {
+    background-color: var(--color-primary);
+    padding: 4rem;
+    border-radius: 1em;
+}
+
+.form__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form__input {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.4rem;
+    color: var(--color-neutral);
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+.form__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+.form__input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.form__input-option {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+.schedule__form .btn {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .schedule__form {
+        padding: 3rem;
+    }
+
+    .form__row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .schedule__title {
+        font-size: 2.8rem;
+    }
+
+    .schedule__form {
+        padding: 2rem;
+    }
+
+    .form__input {
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+} 

@@ -27,25 +27,6 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll)
 
 
-// Formulário de agendamento
-const appointmentForm = document.querySelector('.appointment__form')
-if (appointmentForm) {
-	appointmentForm.addEventListener('submit', (e) => {
-		e.preventDefault()
-
-		// Aqui você pode adicionar a lógica para enviar os dados do formulário
-		const formData = new FormData(appointmentForm)
-		const appointmentData = Object.fromEntries(formData)
-
-		// Por enquanto, apenas mostra os dados no console
-		console.log('Dados do agendamento:', appointmentData)
-
-		// Feedback visual para o usuário
-		alert('Agendamento recebido! Entraremos em contato em breve.')
-		appointmentForm.reset()
-	})
-}
-
 // Animação de entrada dos elementos
 const observerOptions = {
 	threshold: 0.1,
@@ -61,18 +42,17 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions)
 
 // Elementos para animar
-const animateElements = document.querySelectorAll(
-	'.service__card, .pricing__item, .about__image, .contact__item'
-)
+const animateElements = document.querySelectorAll('.service__card, .pricing__item, .about__image, .contact__item')
 
 animateElements.forEach((element) => {
 	element.classList.add('animate-element')
 	observer.observe(element)
 })
 
+
 // Form Submission
+const scheduleForm = document.querySelector('.schedule__form')
 const contactForm = document.querySelector('.contact__form')
-const footerForm = document.querySelector('.footer__form')
 
 function handleFormSubmit(e) {
 	e.preventDefault()
@@ -86,27 +66,19 @@ function handleFormSubmit(e) {
 	const submitBtn = e.target.querySelector('button[type="submit"]')
 	const originalText = submitBtn.textContent
 	submitBtn.textContent = 'Enviado!'
-	submitBtn.style.backgroundColor = 'var(--color-primary-light)'
 
 	setTimeout(() => {
 		submitBtn.textContent = originalText
-		submitBtn.style.backgroundColor = ''
 		e.target.reset()
 	}, 2000)
 }
 
-if (contactForm) {
-	contactForm.addEventListener('submit', handleFormSubmit)
-}
+scheduleForm.addEventListener('submit', handleFormSubmit)
+contactForm.addEventListener('submit', handleFormSubmit)
 
-if (footerForm) {
-	footerForm.addEventListener('submit', handleFormSubmit)
-}
 
 // Scroll Reveal Animation
-const revealElements = document.querySelectorAll(
-	'.service__card, .pricing__item'
-)
+const revealElements = document.querySelectorAll('.service__card, .pricing__item')
 
 function revealOnScroll() {
 	revealElements.forEach((element) => {

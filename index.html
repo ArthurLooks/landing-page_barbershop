@@ -24,7 +24,7 @@
                 <li class="header__nav-item"><a href="#about" class="header__nav-link">SOBRE</a></li>
                 <li class="header__nav-item"><a href="#services" class="header__nav-link">SERVIÇOS</a></li>
                 <li class="header__nav-item"><a href="#pricing" class="header__nav-link">PREÇOS</a></li>
-                <li class="header__nav-item"><a href="#appointment" class="header__nav-link">AGENDAR</a></li>
+                <li class="header__nav-item"><a href="#schedule" class="header__nav-link">AGENDAR</a></li>
                 <li class="header__nav-item"><a href="#contact" class="header__nav-link">CONTATO</a></li>
             </ul>
         </nav>
@@ -35,7 +35,7 @@
                 <span class="home__subtitle">ESTILO E TRADIÇÃO</span>
                 <h1 class="home__title">A MELHOR BARBEARIA DA CIDADE</h1>
                 <p class="home__description">RUA DA BARBEARIA, 123. AGENDAMENTO: (11) 99999-9999</p>
-                <a href="#appointment" class="btn btn__secondary">AGENDAR HORÁRIO</a>
+                <a href="#schedule" class="btn btn__secondary">AGENDAR HORÁRIO</a>
             </div>
         </section>
         <section id="about" class="about">
@@ -110,74 +110,73 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact">
-            <div class="contact__container container">
-                <div class="contact__content">
-                    <div class="contact__info">
-                        <h2 class="contact__title">Faça seu Agendamento</h2>
-                        <form class="contact__form">
-                            <div class="form__row">
-                                <input type="text" class="form__input" placeholder="Nome" required>
-                                <input type="tel" class="form__input" placeholder="Telefone" required>
-                            </div>
-                            <div class="form__row">
-                                <input type="date" class="form__input" required>
-                                <input type="time" class="form__input" required>
-                            </div>
-                            <div class="form__row">
-                                <select class="form__input" required>
-                                    <option value="">Serviços</option>
-                                    <option value="corte">Corte de Cabelo</option>
-                                    <option value="barba">Barba</option>
-                                    <option value="completo">Pacote Completo</option>
-                                </select>
-                                <select class="form__input" required>
-                                    <option value="">Escolha o Barbeiro</option>
-                                    <option value="joao">João Silva</option>
-                                    <option value="pedro">Pedro Santos</option>
-                                    <option value="carlos">Carlos Oliveira</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn--primary">AGENDAR HORÁRIO</button>
-                        </form>
+        <section id="schedule" class="schedule">
+            <div class="schedule__container container">
+                <h2 class="section__title">Faça seu Agendamento</h2>
+                <form class="schedule__form">
+                    <div class="form__row">
+                        <input type="text" class="form__input" placeholder="Nome" required>
+                        <input type="tel" class="form__input" placeholder="Telefone" required>
                     </div>
-                </div>
+                    <div class="form__row">
+                        <input type="date" class="form__input" required>
+                        <input type="time" class="form__input" required>
+                    </div>
+                    <div class="form__row">
+                        <select class="form__input" required>
+                            <option class="form__input-option" value="">Serviços</option>
+                            <option class="form__input-option" value="corte">Corte de Cabelo</option>
+                            <option class="form__input-option" value="barba">Barba</option>
+                            <option class="form__input-option" value="completo">Pacote Completo</option>
+                        </select>
+                        <select class="form__input" required>
+                            <option class="form__input-option" value="">Escolha o Barbeiro</option>
+                            <option class="form__input-option" value="joao">João Silva</option>
+                            <option class="form__input-option" value="pedro">Pedro Santos</option>
+                            <option class="form__input-option" value="carlos">Carlos Oliveira</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn__secondary">AGENDAR HORÁRIO</button>
+                </form>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer__container container">
-            <div class="footer__content">
-                <div class="footer__info">
+    <footer id="contact" class="contact">
+        <div class="contact__container container">
+            <div class="contact__content">
+                <div class="contact__info">
                     <h3>Contato</h3>
                     <p>Rua da Barbearia, 123</p>
                     <p>São Paulo - SP</p>
-                    <p class="footer__phone">(11) 99999-9999</p>
-                    <a href="mailto:contato@barbershop.com.br" class="footer__email">contato@barbershop.com.br</a>
+                    <p><a href="tel:(11) 99999-9999" class="contact__phone">(11) 99999-9999</a></p>
+                    <p><a href="mailto:contato@barbershop.com.br" class="contact__email">contato@barbershop.com.br</a></p>
                 </div>
-                <div class="footer__info">
+                <div class="contact__info">
                     <h3>Horário de Funcionamento</h3>
-                    <ul class="footer__hours">
+                    <ul class="contact__hours">
                         <li>Segunda a Sexta: 09:00 - 20:00</li>
                         <li>Sábado: 09:00 - 18:00</li>
                         <li>Domingo: Fechado</li>
                     </ul>
                 </div>
-                <div class="footer__info">
+                <div class="contact__info">
                     <h3>Newsletter</h3>
                     <p>Inscreva-se para receber novidades e promoções exclusivas.</p>
-                    <form class="footer__form">
-                        <input type="email" placeholder="Seu e-mail" class="footer__input" required>
-                        <button type="submit" class="btn btn--primary">INSCREVER</button>
+                    <form class="contact__form">
+                        <input type="email" placeholder="Seu e-mail" class="contact__input" required>
+                        <button type="submit" class="btn btn__secondary">INSCREVER</button>
                     </form>
                 </div>
             </div>
-            <div class="footer__bottom">
-                <img src="src/images/logo.png" alt="Logo Barbershop" class="footer__logo">
-                <div class="footer__social">
-                    <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="footer__social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <div class="contact__bottom">
+                <a href="#home"><img src="src/images/logo.png" alt="Logo Barbershop" class="contact__logo"></a>
+                <p class="copy">
+                    Copyright &copy 2025 ArthurLooks. All Rights Reserved.
+                </p>
+                <div class="contact__social">
+                    <a href="#" class="contact__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="contact__social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="contact__social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
