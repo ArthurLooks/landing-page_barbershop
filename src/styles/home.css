@@ -1,5 +1,5 @@
 .home {
-    height: 100vh;
+    height: 100dvh;
     background: url('../images/wallpaper01.jpg') no-repeat center top fixed;
     background-size: cover;
     display: flex;

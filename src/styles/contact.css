@@ -152,6 +152,7 @@
     }
 
     .contact__form {
+        max-width: 300px;
         flex-direction: column;
     }
 
