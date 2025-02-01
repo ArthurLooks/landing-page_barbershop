@@ -1,6 +1,6 @@
 .header {
     backdrop-filter: blur(10px);
-    width: 100%;
+    width: 100dvw;
     padding: 1rem 8%;
     position: fixed;
     display: flex;
@@ -16,7 +16,6 @@
 
 .header__logo-img {
     height: 70px;
-    transition: all 0.3s ease;
 }
 
 .header__menu-btn {
@@ -55,20 +54,19 @@
         background-color: var(--color-primary);
         width: 100%;
         height: 0;
-        opacity: 0;
-        padding: 2rem 0;
         position: fixed;
         top: 100px;
         left: 0;
+        overflow: hidden;
         transition: all 0.3s ease;
     }
     .header__nav.active {
         height: 377px;
-        opacity: 1;
     }
 
     .header__nav-list {
         width: 100%;
+        padding: 2rem 0;
         flex-direction: column;
         gap: 2rem;
         text-align: center;
