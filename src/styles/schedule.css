@@ -12,12 +12,14 @@
 }
 
 .schedule__form {
+    width: 100%;
     background-color: var(--color-primary);
     padding: 4rem;
     border-radius: 1em;
 }
 
 .form__row {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
