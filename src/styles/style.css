@@ -56,6 +56,28 @@ ul {
     list-style: none;
 }
 
+.whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(14, 10, 7, 0.6);
+    border-radius: 50%;
+    font-size: 1.8rem;
+    color: var(--color-neutral);
+    position: fixed;
+    bottom: 5dvh;
+    right: 5dvh;
+    z-index: 5;
+    transition: all 0.3s ease;
+}
+.whatsapp:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    transform: translateY(-5px);
+}
+
 .container {
     max-width: var(--container-width);
     margin: auto;
